@@ -11,7 +11,7 @@
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "build" : "tsc",
-    "start": "cross-env NODE_ENV=production node src/server.js"
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
