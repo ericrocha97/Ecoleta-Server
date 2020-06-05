@@ -18,10 +18,10 @@ module.exports = {
     production: {
         client: 'mysql',
         connection: {
-            host : 'remotemysql.com',
-            database: 'YDUJZ8x6mX',
-            user: 'YDUJZ8x6mX',
-            password: 'pA0aMgiIY1'
+            host : 'sql10.freemysqlhosting.net',
+            database: 'sql10345939',
+            user: 'sql10345939',
+            password: 'rQQa6GIFrD'
         },
         pool: {
             min: 2,
