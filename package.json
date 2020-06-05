@@ -10,9 +10,9 @@
     "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "knex:migrate-production": "knex --knexfile knexfile.js migrate:latest",
-    "knex:seed-production": "knex --knexfile knexfile.js seed:run",
-    "build": "tsc && build/server.js",
+    "knex:migrate-production": "cross-env NODE_ENV=production knex --knexfile knexfile.ts migrate:latest",
+    "knex:seed-production": "cross-env NODE_ENV=production knex --knexfile knexfile.ts seed:run",
+    "build": "tsc",
     "posinstall":  "knex --knexfile knexfile.js migrate:latest",
     "start": "cross-env NODE_ENV=production node src/server.js"
   },
