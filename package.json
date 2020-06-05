@@ -12,7 +12,7 @@
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:migrate-production": "knex --knexfile knexfile.js migrate:latest",
     "knex:seed-production": "knex --knexfile knexfile.js seed:run",
-    "build": "tsc",
+    "build": "tsc && build/server.js",
     "posinstall":  "knex --knexfile knexfile.js migrate:latest",
     "start": "cross-env NODE_ENV=production node src/server.js"
   },
